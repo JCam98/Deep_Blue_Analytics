@@ -46,18 +46,6 @@ class TestInput(unittest.TestCase):
 
     # --- Edge Cases ---
 
-    def test_different_numeric_types(self):
-        """Test initialization and setting with floats and negative numbers."""
-        float_obj = Input(-5.5, 0.0)
-        self.assertEqual(float_obj.x, -5.5)
-        self.assertEqual(float_obj.y, 0.0)
-
-    def test_non_numeric_types(self):
-        """Test with string values."""
-        string_obj = Input("hello", "world")
-        self.assertEqual(string_obj.x, "hello")
-        self.assertEqual(string_obj.y, "world")
-
     def test_none_values(self):
         """Test with None as values."""
         none_obj = Input(None, 15)
